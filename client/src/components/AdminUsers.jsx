@@ -138,7 +138,7 @@ export default function AdminUsers(props) {
       }
       setFlagLoad(false);
     } else if (action == "update") {
-      user._id = userToBeEdited._id; // The form does not have id field
+      user._id = userToBeEdited._id; 
       setFlagLoad(true);
       try {
         let response = await axios.put(
